@@ -30,6 +30,7 @@ body {
 .footer {
   min-height: 50px;
   background: url('../images/footer.jpg');
+  border-top: solid 3px #fff;
   border-radius: 0 0 10px 10px;
 }
 
