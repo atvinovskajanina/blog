@@ -3,11 +3,9 @@
 <head>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
+	<link href="css/blog.css" rel="stylesheet">
 </head>
 <body>  
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
    <div class="wrapper">
   
   <div class="header">
@@ -25,24 +23,44 @@
       </ul>
 	</li>
     <li><a href="" title="Портфолио">Портфолио</a></li>
-    <li><a href="" title="Contact">Контакты</a></li>
+    <li><a href="" title="Контакты">Контакты</a></li>
+		<form class="form-search">
+			<input type="text" class="input-medium search-query"placeholder="Введите текст" >
+			<button type="submit" class="btn">Поиск</button>
+        </form>
     <div class="clear"></div>
+	        
   </ul>
+  <script src="js/context.js"></script>
+    <div id="content" class="content" >
+<script language="JavaScript">
+// Теперь вызываем функцию, определенную выше
+print_todays_date();
+print_array();
+</script>
+</div>
+  <div class="container">
 
-  <div class="pagination pagination-sm">
+
+<nav>
+  <ul class="pagination pagination-sm">
   		<li class="disabled"><a href="#">Prev</a></li>
 		<li class="active"><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
-        <li><a href="#">Next</a></li>
-       	
-  </div>       
+        <li><a href="#">Next</a></li> 	
+  </ul> 
+</nav> 
+    </div><!-- /.container -->
+ 
   <div class="footer">
   
   </div>
   
 </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
