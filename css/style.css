@@ -1,5 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Monda:400,700);
 
+h1, h2, h3, h4, h5, h6, th {
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li,{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
 body {
   background: #d4d4d4;
   font-family: 'Monda', sans-serif;
@@ -27,6 +40,12 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
+.posts-container > li {
+  display: table;
+  padding: 10px;
+  margin: 10px;
+  color: #00261C;
+}
 .footer {
   min-height: 50px;
   background: url('../images/footer.jpg');
