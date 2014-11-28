@@ -13,27 +13,27 @@ var posts =[
 			"title": "Как сделать удачное селфи",
 			"date":"2014-10-15",
 			"content": "Здесь контекст статьи 3"
+		},
+		{
+			"title": "Полезные советы",
+			"date":"2014-10-03",
+			"content": "Здесь контекст статьи 4"
 		}
 	]
 var $ = document.querySelector.bind(document)
+var applications = $('.posts-container > li');
 
-var containerEl = $('.posts-container')
+var containerEl = $('.temp')
 
-// Render Fn
 var render = function(arr) {
   return arr.reduce(function(previousValue, currentValue, index, array) { return previousValue +
 																								
-																								'<ul>'+
-																									//insertEl('.blog-post-title',currentValue.title)+
-																									'<li>' + currentValue.title + '</li>'+
-																									'<li>' + currentValue.date + '</li>'+
-																									'<li>' + currentValue.content + '</li>'+
-																								'</ul>'
+																								'<a href="#">'+currentValue.title+'</a> <br>'
+																									//'<li>' + currentValue.date + '</li>'+
+																									//'<li>' + currentValue.content + '</li>'+
+																							
 																		  },'');
 }
-//var insertEl = function(el,value){
-	//return $(el).innerHTML = value;
-//}
 
 // Init
-//containerEl.innerHTML = render(posts)
+containerEl.innerHTML = render(posts);
