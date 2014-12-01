@@ -1,0 +1,9 @@
+
+
+.gallery a img{
+  display: inline-block;
+  width: 270px;
+  height: 150px;
+  margin: 1em;
+}
+
