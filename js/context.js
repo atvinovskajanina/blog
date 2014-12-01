@@ -57,12 +57,7 @@ function loadbtn(event){
 				return (parseDate(element.date) >= filterBegin)&&(parseDate(element.date) <= filterEnd)
 			}
 			var filterlist=postslist.filter(isEnough)
-		
-			if (filterlist.value == null){
-				containerEl.innerHTML="Ничего не найдено. Повторите!"
-			}else{
-				containerEl.innerHTML = render(filterlist);
-			}
+			containerEl.innerHTML = render(filterlist);
 	}
 
 function loadpost(index){
