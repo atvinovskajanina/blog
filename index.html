@@ -1,11 +1,23 @@
 <DOCTYPE! html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Блог о фото</title>
+	
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/gallery.css" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' href='css/calendar.css' type='text/css'>
+	<script type='text/javascript' src='js/calendar.js'></script>
+	<script src='js/jquery-1.11.2.min.js'></script>
+	<script src="js/menu.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	
+	<link type="text/css" rel="stylesheet" href="css/simplePagination.css"/>
+	<script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+	
+
 </head>
 <body>  
    <div class="wrapper">
@@ -16,27 +28,27 @@
   
   <ul class="navigation">
   
-    <li><a href="index.html" title="Главная">Главная</a></li>
+    <li class= "home"><a href="index.html" title="Главная">Главная</a></li>
     <li><a href="" title="Всё о фото">Всё о фото</a>
 	<ul>
-        <li><a href="types.html" title="Виды фотоаппаратов">Виды фотоаппаратов</a></li>
-        <li><a href="accessories.html" title="Аксессуары">Аксессуары</a></li>
-        <li><a href="technology.html" title="Техника фотосъемки">Техника фотосъёмки</a></li>
+        <li class="types"><a href="#types" title="Виды фотоаппаратов">Виды фотоаппаратов</a></li>
+        <li class="accessories"><a href="#accessories" title="Аксессуары">Аксессуары</a></li>
+        <li class="technology"><a href="#technology" title="Техника фотосъемки">Техника фотосъёмки</a></li>
       </ul>
 	</li>
-    <li><a href="gallery.html" title="Портфолио">Портфолио</a></li>
-    <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+    <li class= "gallery"><a href="#gallery" title="Портфолио">Портфолио</a></li>
+    <li class= "contacts"><a href="#contacts" title="Контакты">Контакты</a></li>
     <div class="clear"></div>
 	        
   </ul>
-	
-		 <div class="blog-sidebar">
+	<div id="loadcontent">
+	<div class="blog-sidebar">
           <div class="sidebar-module-inset">
             <h4>Поиск по дате</h4>
 			<form action="" method="">
 				<p>От: <input id = "filterBegin" name="data1" class="date"><br> 
 					До: <input id = "filterEnd" name="data2" class="date"></p>
-				<input type="button" name="button1" class="btn btn-primary" value = "Поиск" onclick="loadbtn(event)">
+				<input type="button" name="button1" class="btn btn-primary" value = "Поиск" onclick="loadbtn()" >
 			</form>
           </div>
           <div class="sidebar-module">
@@ -50,17 +62,22 @@
  
 		<ul id="posts-list" class="posts-container">
 	
-	</ul>
-      	 
-        
-  
-</div>
-<script type='text/javascript' src='js/calendar.js'></script>
+	</ul>	
+	</div>
+	 <div id="light-pagination" class="pagination">
+	  <ul>
+<li><a href="#">Prev</a></li>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-   <script src="http://underscorejs.org/underscore-min.js"></script>
-   <script src="js/context.js"></script>
+<li><a href="#">Next</a></li>
+</ul>
+
+	 </div>
+
+</div>
+
+
+
+
   <div class="footer">
   
   </div> 
