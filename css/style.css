@@ -38,7 +38,7 @@ body{
   border-radius: 10px 10px 0 0;
 }
 
-.posts-container > li {
+.liPaginate li {
   display: table;
   padding: 10px;
   margin-left: 10px;
@@ -154,3 +154,4 @@ body{
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
+
